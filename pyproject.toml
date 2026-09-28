@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emberton-no-sleep"
+version = "0.1.0"
+description = "Experimental USB-powered idle-timer patch for one Marshall Emberton III firmware build"
+requires-python = ">=3.11"
+dependencies = ["bleak==3.0.2"]
+license = "Unlicense"
+license-files = ["LICENSE", "SAFETY.md", "NOTICE.md", "SECURITY.md"]
+readme = "README.md"
+
+[project.scripts]
+emberton-no-sleep = "emberton_no_sleep.cli:main"
+
+[tool.setuptools]
+packages = ["emberton_no_sleep"]

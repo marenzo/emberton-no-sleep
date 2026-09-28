@@ -1,0 +1,13 @@
+# Local acquisitions and the preserved investigation must never be published.
+/private/
+/work/
+*.bin
+*.fota
+*.jsonl
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.DS_Store
